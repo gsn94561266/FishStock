@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+$border-radius: 0.225rem;
+
+// 所有顏色
+// $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+// 新增顏色
+$custom-colors: (
+  'indigo-100': rgb(224 231 255),
+  'indigo-200': rgb(199 210 254),
+  'indigo-300': rgb(165 180 252),
+  'purple-100': rgb(243 232 255),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
